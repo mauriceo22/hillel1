@@ -1,4 +1,4 @@
-userinput = input('Enter expression')
+userinput = input("Enter expression:\n")
 def calc():
     try:
         return eval(userinput,{"__builtins__":None})
@@ -6,4 +6,4 @@ def calc():
         print('Incorrect')
 
 #   return eval(userinput,{"__builtins__":None})
-print(calc())
+print(userinput, '=' , calc())
